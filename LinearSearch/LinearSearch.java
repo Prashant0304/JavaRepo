@@ -6,9 +6,8 @@ import java.util.Scanner;
 public class LinearSearch {
     static int linearsearch(int arr[], int x){
         for(int i=0;i<arr.length;i++){
-            if(arr[i] == x){
+            if(arr[i] == x)
                return i;
-            }
         }
         return -1;
     }
@@ -19,9 +18,9 @@ public class LinearSearch {
         int x = sc.nextInt();
         int value=linearsearch(arr,x);
         if(value == -1){
-            System.out.println("X is not present "+value);
+            System.out.println("Integer is not present "+value);
         }else{
-            System.out.println("X is present at : "+value);
+            System.out.println("Integer is present at : "+value);
         }
     }
 }
